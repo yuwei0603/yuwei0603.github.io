@@ -5,21 +5,37 @@
         }      
     });
     if (currentURL.indexOf("/schools/") > -1) {
+        $("#logo").attr("src", "../img/logo.png");
         $("#index-link").attr("href", "../index.html");
         $("#profile-link").attr("href", "../profile.html");
+        $("$main-pic").attr("src","../img/graduate.png")
     }
 </script>
 
 
-<p class="title">碩士班甄試招生資訊系統</p>
+
 <div class="menu">
-    <div class="h-top">
-        <a href="#"><span id="current_user">--</span><span> 同學</span></a>
-        <a id="logout_btn" href="#">(登出)</a>
-    </div>
-    <div class="h-bottom">    
+    
+    <div class="h-left">    
+        <img id="logo" class="logo" src="./img/logo.png" alt="">
         <a id="index-link" href="./index.html"><div class="option">選擇學校</div></a>
+        <div class="v-bar"></div>
+        <a id="discuss-link" href="./discuss.html"><div class="option">學生討論</div></a>
         <div class="v-bar"></div>
         <a id="profile-link" href="./profile.html"><div class="option">個人檔案</div></a>
     </div>
+    <div class="h-right">
+        <a href="#"><span id="current_user">--</span><span> 同學，您好</span></a>
+        <a id="logout_btn" href="#">(登出)</a>
+    </div>
+
+</div>
+<div class="main-sign">
+    <div class="sign-lb">
+        <p class="title">碩士班甄試招生資訊系統</p>
+    </div>
+    <div class="sign-rb">
+        <img id="main-pic" src="./img/graduate.png" alt="graduate">
+    </div>
+    
 </div>

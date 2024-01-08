@@ -13,75 +13,85 @@
 body {
     position: relative;
     margin: 0;
-    padding: 0;
-    background-color:#CED0CE;
+    padding: 4rem;
+    background-color:#BFDABD;
 }
 
 /* -----header----- */
-header {
+.header {
     width: 100%;
     box-sizing: border-box;
     padding: 30px 30px;
-    background-color: #475841;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
     flex-wrap: wrap; 
 }
 
-header a {
+.header a {
     text-decoration: none;
-}
-.title {
-    color: #FFF;
-    width: 50%;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 600;
-    margin: auto;
+    color: #000;
 }
 .menu {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
 }
-.h-top {
-    width: 100%;
+.h-right {
     text-align: right;
 }
-.h-top a {
-    color: azure;
-    font-size: 12px;
+.h-right a {
+    font-size: 1.2rem;
 }
-.h-bottom {
-    width: 100%;
+.h-left {
     display: flex;
     flex-wrap: wrap;    
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     margin: 0; 
     margin-right: -10px;
 }
 
 
 .option{
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 .v-bar {
     height: 30px;
-    border-left: #ffffff6e solid 1px;
+    border-left: #3535356e solid 1px;
 }
 
-
-/* footer */
-footer {
+.main-sign {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sign-lb {
+    width: 60%;
+}
+.title {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    margin: auto;
+}
+.sign-rb {
+    width: 30%;
+}
+.sign-rb img {
+    max-width: 100%;
+}
+/* . */
+.footer {
     height: 12rem;
     width: 100%;
     padding: 2.5rem 3rem;

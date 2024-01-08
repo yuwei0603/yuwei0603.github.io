@@ -32,26 +32,34 @@ function displaySchoolData(schoolData) {
         let Abbreviation = school['Abbreviation']
         let school_block = `
             <li class="school col">
-                <div class="school-bar">
-                    <p class="school-name">${SchoolName}</p>
-                    <div class="notice-box">
-                        <div class="switch">
-                            <input class="switch-checkbox" id="${Abbreviation}_notice" type="checkbox" name="switch-checkbox">
-                            <label class="switch-label" for="${Abbreviation}_notice">
-                                <span class="switch-txt" turnOn="開" turnOff="關"></span>
-                                <span class="switch-Round-btn"></span>
-                            </label>
+                <div class="school-logo">
+                    <img src="img/school_logo/${Abbreviation}.png" alt="${Abbreviation}">
+                </div>
+                <div class="school-rbox">
+                    <div class="school-bar">
+                        <p class="school-name">${SchoolName}</p>
+                        <div class="notice-box">
+                            <div class="switch">
+                                <input class="switch-checkbox" id="${Abbreviation}_notice" type="checkbox" name="switch-checkbox">
+                                <label class="switch-label" for="${Abbreviation}_notice">
+                                    <span class="switch-txt" turnOn="開" turnOff="關"></span>
+                                    <span class="switch-Round-btn"></span>
+                                </label>
+                            </div>
+                            <img class="bell" src="img/bell.png" alt="">
                         </div>
-                        <img class="bell" src="img/bell.png" alt="">
+                    </div>
+                    <div class="school-btn-bar">
+                        <a class="school-btn download" href="">
+                            <div>簡章下載</div>
+                        </a>
+                        <div class="v-bar"></div>
+                        <a class="school-btn apply" href="./schools/${Abbreviation}.html">
+                            <div>立即報名</div>
+                        </a>
                     </div>
                 </div>
-                <img class="school-logo" src="img/school_logo/${Abbreviation}.png" alt="${Abbreviation}">
-                <a class="school-btn download" href="">
-                    <div>簡章下載</div>
-                </a>
-                <a class="school-btn apply" href="./schools/${Abbreviation}.html">
-                    <div>立即報名</div>
-                </a>
+
             </li>
         `
         schools_block.append(school_block);

@@ -11,8 +11,8 @@ $(document).ready(function() {
 });
 
 function loadPart() {
-    $("header").load(root_url + "part/header.html");
-    $("footer").load(root_url + "part/footer.html");
+    $(".header").load(root_url + "part/header.html");
+    $(".footer").load(root_url + "part/footer.html");
 }
 
 function loadLoaderCSS() {
@@ -42,6 +42,10 @@ function check_login() {
         type: "POST",
         url: "https://admissionsportal.000webhostapp.com/backend/app/user_login_status.php",
         data: {action : 'check'},
+        xhrFields: {
+            withCredentials: true
+        },
+        crossDomain: true,
         success: function(response) {
             if (response.status) {
                 if (currentURL.indexOf("login.html") > -1){
@@ -68,6 +72,10 @@ function log_out() {
         type: "POST",
         url: "https://admissionsportal.000webhostapp.com/backend/app/user_login_status.php",
         data: {action : 'log_out'},
+        xhrFields: {
+            withCredentials: true
+        },
+        crossDomain: true,
         success: function(response) {
             if (response.status == "success") {
                 window.location.href = root_url + "login.html";

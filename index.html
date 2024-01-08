@@ -9,24 +9,33 @@
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
 </head>
 <body>
-    <header></header>
-
-    <div class="main">
-        <div id="container" class="container">
+    <div id="container" class="container">
+        <div class="header"></div>
+        <div class="main">
             <div class="search-bar">
-                <p>選擇學校</p>
+                <div class="stype-menu">
+                    <div class="stype-option">全部</div>
+                    <div class="stype-option">國立大學</div>
+                    <div class="stype-option">私立大學</div>
+                    <div class="stype-option">普通大學</div>
+                    <div class="stype-option">科技大學</div>
+                </div>
                 <div class="search">
                     <img src="img/search.png" alt="搜尋">
                     <input type="text" id="search-input" class="search-input" placeholder="搜尋">
                     <button id="search-btn" class="search-btn"><img src="img/send-message.png" alt=""></button>
                 </div>
             </div>
+
             <div id="schools-group" class="schools-group"></div>
         </div>
+        <div class="footer"></div>
     </div>
+
     <div id="results"></div>
-    <footer></footer>
 </body>
 </html>

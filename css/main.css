@@ -1,16 +1,20 @@
 :root {
     --content-width:75rem;
 }
-/* 主要 */
-.main {
-    width: 100%;
-    margin: 2rem auto;
-}
+
 
 /* 白底 */
 .container {
-    width: var(--content-width);
-    margin: 0 auto;
+    width: 100%;
+    margin: 0rem auto;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+
+/* 主要 */
+.main {
+    width: 100%;
+    padding: 2rem;
 }
 
 /* -----school----- */
@@ -18,12 +22,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1.5rem;
 }
 .search-bar p {
     width: 50%;
     font-size: 2rem;
     margin: 1rem 0;
     font-weight: 500;
+}
+.stype-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.stype-option{
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.stype-option:hover {
+    background-color: #BFDABD;
 }
 .search {
     border-bottom: 1px solid #688C7C;
@@ -68,11 +88,26 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     box-shadow: -0.125rem 0rem 0.25rem 0rem rgba(0, 0, 0, 0.125), 0.125rem -0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.125), 0.25rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
-
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.school-logo {
+    width: calc(30% - 2rem);
+    margin: 1rem;
+}
+.school-logo img {
+    max-width: 100%;
+}
+.school-rbox {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .school-bar {
-    padding: 0.3125rem 0.625rem 0rem 0.625rem;
+    padding: 1rem;
     width: 100%;
     display: flex;
     justify-content:space-between;
@@ -80,27 +115,32 @@
 }
 .school-name {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
-.school-logo {
-    width: 40%;
-    margin: 1rem 30%;
+.school-btn-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .school a {
     text-decoration: none;
     width: 50%;
     text-align: center;
-    color: white;
-    padding: 5%;
-    font-weight: 600;
+    color: black;
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
 }
-.download {
+.school .v-bar {
+    height: 30px;
+    border-left: #3535356e solid 1px;
+}
+/* .download {
     background-color: #475841;
 }
 .apply {
     background-color: #3F403F;
-}
+} */
 
 .notice-box {
     display: flex;

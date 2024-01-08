@@ -9,6 +9,10 @@ $(document).ready(function() {
             type: "POST",
             url: "https://admissionsportal.000webhostapp.com/backend/app/user_login_status.php",
             data: formData,
+            xhrFields: {
+                withCredentials: true
+            },
+            crossDomain: true,
             success: function(response) {
                 switch (response.status) {
                     case 'success':
@@ -50,6 +54,10 @@ $(document).ready(function() {
             type: "POST",
             url: "https://admissionsportal.000webhostapp.com/backend/app/user_login_status.php",
             data: formData,
+            xhrFields: {
+                withCredentials: true
+            },
+            crossDomain: true,
             success: function(response) {
                 switch (response.status) {
                     case 'repeated':
