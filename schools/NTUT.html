@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人檔案</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/schools.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/schools.css">
+</head>
+<body>
+    <header></header>
+
+    <div class="main area1">
+        <div class="container">
+            <p id="schoolname" class="area-title"></p>
+            <div class="area1-block">
+                <div class="area1-box">
+                    <img class="area1-img" src="../img/user.png" alt="user">
+                    <p class="area1-text"><span>考生姓名：</span><span class="current_user"></span></p>
+                </div>
+                <div class="area1-box">
+                    <img class="area1-img" src="../img/bachelor.png" alt="">
+                    <p class="area1-text"><span>報考類別：</span><span>碩士班甄試</span></p>
+                </div>
+                <div class="area1-box">
+                    <img class="area1-img" src="../img/structure.png" alt="">
+                    <p class="area1-text"><span>報考系所：</span><span>財務金融系</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main area2">
+        <div class="container">
+            <p class="area-title">個人資料<a id="edit-form" href="javascript:void(0);"><img src="../img/edit.png" alt=""></a></p>
+            <div class="data-table">
+                <form id="basic-data" action="" method="post">
+              
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="username">姓名</label></div>
+                        <div class="table-cell value"><input value="" type="text" name="username" id="username"></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="gender" value="">性別</label></div>
+                        <div class="table-cell value">
+                            <select id="gender" value="">
+                                <option value="男">男</option>
+                                <option value="女">女</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="ID_number">身分證字號</label></div>
+                        <div class="table-cell value"><input type="text" name="ID_number" id="ID_number"></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="birthdate">出生日期</label></div>
+                        <div class="table-cell value"><input type="date" name="birthdate" id="birthdate"></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="email">電子信箱</label></div>
+                        <div class="table-cell value"><input type="email" name="email" id="email"></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="phone">手機</label></div>
+                        <div class="table-cell value"><input type="text" name="phone" id="phone"></div>
+                    </div>
+                </form>
+                <form id="added-data" action="" method="post">
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="address">居住地址</label></div>
+                        <div class="table-cell value"><input type="text" name="address" id="address"></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="score">平均分數</label></div>
+                        <div class="table-cell value"><input type="number" name="score" id="score"></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="graduate_school">畢業學校</label></div>
+                        <div class="table-cell value"><input type="text" name="graduate_school" id="graduate_school"></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell field"><label for="graduate_major">畢業科系</label></div>
+                        <div class="table-cell value"><input type="text" name="graduate_major" id="graduate_major"></div>
+                    </div>
+                </form>  
+            </div>
+            <div class="form-btn">
+                <input id="submit" type="button" value="送出" onclick="">
+                <input id="cancel" type="button" value="取消">
+            </div>
+        </div>
+    </div>
+    <div class="main area3">
+        <div class="container">
+            <p class="area-title">報名相關資料</p>
+            <ul class="area3-row">
+                <li class="area3-col">
+                    <p class="area3-title">報名資料修改</p>
+                    <p class="area3-content">此選項允許您輕鬆更新和編輯您的個人報名資訊，確保資料的準確性。</p>
+                    <a href="javascript:void(0);" class="area3-btn">前往修改	&ndash;&rsaquo;</a>
+                </li>
+                <li class="area3-col">
+                    <p class="area3-title">審查資料</p>
+                    <p class="area3-content">請提交相關文件以供我們進行詳細審查，以確保您的申請達到我們的標準和要求。</p>
+                    <a href="javascript:void(0);" class="area3-btn">前往繳交	&ndash;&rsaquo;</a>
+                </li>
+                <li class="area3-col">
+                    <p class="area3-title">師長推薦函</p>
+                    <p class="area3-content">請邀請您的師長為您提供推薦函，該函件將支持您的申請，強調您的學術和專業素質。</p>
+                    <a href="javascript:void(0);" class="area3-btn">前往繳交	&ndash;&rsaquo;</a>
+                </li>
+                <li class="area3-col">
+                    <p class="area3-title">學經歷彙整表</p>
+                    <p class="area3-content">填寫和提交您的學歷和經歷資料，這有助於我們更全面地了解您的學業和職業背景。</p>
+                    <a href="javascript:void(0);" class="area3-btn">前往繳交	&ndash;&rsaquo;</a>
+                </li>
+                <li class="area3-col">
+                    <p class="area3-title">繳費單</p>
+                    <p class="area3-content">您可以安全且方便地支付相關的報名費用，確保您的申請程序得以繼續進行。</p>
+                    <a href="javascript:void(0);" class="area3-btn">前往列印	&ndash;&rsaquo;</a>
+                </li>
+                <li class="area3-col">
+                    <p class="area3-title">准考證</p>
+                    <p class="area3-content">下載和打印您的正式准考證，這是您參加考試的入場證，請務必攜帶至考場以供查驗。</p>
+                    <a href="javascript:void(0);" class="area3-btn">前往下載	&ndash;&rsaquo;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer></footer>
+    <script></script>
+</body>
+</html>

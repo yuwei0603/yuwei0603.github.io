@@ -1,0 +1,276 @@
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marquee-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    overflow: hidden;
+}
+.marquee {
+    width: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.marquee-img {
+    animation: marquee 10s linear infinite;
+    margin-left: 0.3rem;
+    opacity: 0.3;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.m1 {
+    transform: rotate(-15deg);
+    margin-top: 10rem;
+    margin-left: -5rem;
+}
+.m2 {
+    transform: rotate(40deg);
+    margin-top: 6rem;
+    margin-left: -25rem;
+}
+.ch-title {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.en-title {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.03125em;
+}
+.login-box {
+    width: 28.5rem;
+    height: 31rem;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 0.6rem;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25), 0.125rem -0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.login-form {
+    width: 75%;
+}
+.login-label{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.35rem;
+}
+.login-input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.35rem;
+    border: 0.0625rem solid #000;
+    margin-bottom: 1rem;
+}
+.login-btn {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+.option {
+    width: 75%;
+    text-align: right;
+}
+.social {
+    width: 75%;
+}
+.social .login-btn {
+    background-color: #D9D9D987;
+    line-height: 2.5rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social .login-btn img {
+    margin-right: 2%;
+}
+.separator {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+.separator .or-line {
+    width: 40%;
+    height: 0.0125rem;
+    border-top: 0.0125rem solid #000;
+}
+.separator .text {
+    width: 10%;
+    flex: 1;
+    text-align: center;
+    margin: 0 0.65rem;
+}
+
+/* 註冊框 */
+.register-block {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.register-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background-color: black;
+    opacity: 0.5;
+}
+.register-box {
+    position: relative;
+    width: 45rem;
+    height: 40rem;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 0.625rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.register-content {
+    width: 90%;
+    overflow: auto;
+}
+.register-content > * {
+    width: 100%;
+}
+.register-content > hr {
+    width: 99%;
+}
+.register-title {
+    margin: 0rem;
+    font-size: x-large;
+    font-weight: 600;
+}
+.register-form > * {
+    width: 100%;
+}
+.register-label{
+    display: block;
+    margin-bottom: 0.35rem;
+}
+.register-input{
+    box-sizing: border-box;
+    height: 2.5rem;
+    border-radius: 0.35rem;
+    border: 0.0125rem solid #000;
+    margin-bottom: 1rem;
+}
+.register-btn {
+    display: block;
+    box-sizing: border-box;
+    height: 2.5rem;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.35rem;
+    margin-top: 1rem;
+}
+
+/* RWD rem*/
+
+@media screen and (max-width: 768px) {
+    .m1 {
+        margin-left: -3.25rem;
+    }
+    .m2 {
+        margin-top: 3.5rem;
+        margin-left: -10.25rem;
+    }
+    .ch-title {
+        font-size: 2rem;
+    }
+    .en-title {
+        font-size: 1rem;
+    }
+    .login-input{
+        margin-bottom: 0.625rem;
+    }
+    .login-btn {
+        margin-top: 0.625rem;
+    }
+    .register-box {
+        width: 29rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .m1 {
+        margin-left: -3.25rem;
+    }
+    .m2 {
+        margin-top: 12.5rem;
+        margin-left: -6.25rem;
+    }
+    .login-box {
+        width: 18.75rem;
+        height: 28.75rem;
+    }
+    .ch-title {
+        font-size: 2rem;
+    }
+    .en-title {
+        font-size: 1rem;
+    }
+    .login-input{
+        margin-bottom: 0.625rem;
+    }
+    .login-btn {
+        margin-top: 0.625rem;
+    }
+    .register-box {
+        width: 20rem;
+        height: auto;
+    }
+    .register-input, .register-btn {
+        height: 2rem;
+    }
+}

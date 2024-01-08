@@ -1,0 +1,123 @@
+/* @font-face {
+    font-family: 'NotoSansTC';
+    src: url('../font/NotoSansTC-VariableFont_wght.ttf') format('truetype');
+}  
+@font-face {
+    font-family: 'Open_Sans';
+    src: url('../font/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}   */
+* {
+    box-sizing: border-box;
+    /* font-family: 'NotoSansTC', 'Open_Sans'; */
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color:#CED0CE;
+}
+
+/* -----header----- */
+header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    background-color: #475841;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap; 
+}
+
+header a {
+    text-decoration: none;
+}
+.title {
+    color: #FFF;
+    width: 50%;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    margin: auto;
+}
+.menu {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+}
+.h-top {
+    width: 100%;
+    text-align: right;
+}
+.h-top a {
+    color: azure;
+    font-size: 12px;
+}
+.h-bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-content: end;
+    margin: 0; 
+    margin-right: -10px;
+}
+
+
+.option{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.v-bar {
+    height: 30px;
+    border-left: #ffffff6e solid 1px;
+}
+
+
+/* footer */
+footer {
+    height: 12rem;
+    width: 100%;
+    padding: 2.5rem 3rem;
+    background-color: #475841;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.foot-l ,.foot-r {
+    width: 50%;
+}
+
+.foot-l p{
+    font-weight: 600;
+    margin: 1.2rem auto;
+}
+
+.foot-l p:first-child {
+    font-size: 2rem;
+}
+
+.foot-r {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot-r p {
+    margin: 0.2rem auto;
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --content-width: 30rem;
+    }
+    .title, .menu {
+        width: 100%;
+    }
+}

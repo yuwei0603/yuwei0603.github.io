@@ -1,0 +1,234 @@
+:root {
+    --content-width: 75rem;
+}
+.main {
+    width: 100%;
+    padding: 4rem 3rem;
+}
+.container {
+    width: var(--content-width);
+    margin: 0 auto;
+}
+.area1 {
+    background-color: #688C7C;
+    color: white;
+}
+.area-title {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+
+}
+
+.area-title img {
+    height: 1.5rem;
+    margin-left: 0.5rem;
+}
+.area1-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.area1-box {
+    width: calc(100%/3);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.area1-img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.area1-text {
+    font-size: 1.5rem;
+}
+.data-table {
+    border: 0.125rem solid #ffffff;
+}
+.data-table form {
+    width: 100%;
+    border-collapse: collapse;
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f4f7fb;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25), 0.125rem -0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15);
+
+}
+
+.table-row {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-cell {
+    border: 0.1rem solid #EEE;
+    text-align: left;
+}
+.table-cell > * {
+    width: 100%;
+    height: 100%;
+    background:none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    transition: none;
+    font-size: 1.2rem;
+}
+.table-cell > *:disabled {
+    color: black;
+}
+.field {
+    width: 30%;
+    padding: 1rem 0.5rem;
+    background-color: #3F403F;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.value {
+    padding: 0.5rem 0.5rem;
+    width: 70%;
+    background-color: #E6E8E6;
+}
+.input-edit {
+    background-color: #fff;
+}
+.form-btn {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.form-btn input {
+    background-color: #6c6f70;
+    color: white;
+    border: none;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25), 0.125rem -0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem;
+    display: none;
+}
+.area3 {
+    background-color: #688C7C;
+    color: #FFF;
+}  
+
+.area3-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+    padding: 0;
+}
+
+.area3-col {
+    background-color: white;
+    margin: 0 1rem;
+    padding: 1rem;
+    width: calc(100% / 2 - 2rem);
+    list-style: none;
+    color: black;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25), 0.125rem -0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15);
+
+}
+
+.area3-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.area3-content {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    height: 5rem;
+    font-size: 1.2rem;
+}
+
+
+.area3-btn {
+    width: 10rem;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    display: block;
+    line-height: 2rem;
+    text-align: center;
+    background-color: #475841;
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 400;
+    box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.25), 0.125rem -0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15);
+
+}
+
+/* RWD rem*/
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 10px;
+    }
+    .main {
+        padding: 4rem 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root {
+        --content-width: 46rem;
+    }
+    .main {
+        padding: 4rem 0.5rem;
+    }
+    .area1-box {
+        width: 100%;
+    }
+    .area1-text {
+        width: 15rem;
+    }
+    .data-table {
+        width: calc(var(--content-width) * 1);
+    }
+    .table-row  {
+        width: 100%;
+    }
+    .table-cell > * {
+        font-size: 1.5rem;
+    }
+    .area3-col {
+        width: calc(100% - 2rem);
+    }
+    .area3-title {
+        font-size: 2rem;
+    }
+    .area3-content {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    :root {
+        --content-width: 30rem;
+    }
+    .value, .field {
+        width: 100%;
+    }
+    .field {
+        background-color: #475841;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+    <div class="marquee-box">
+        <div class="marquee m1">
+            <img class="marquee-img" height="120px" src="img/school_logo/schools_logo.png" alt="marquee">
+            <img class="marquee-img" height="120px" src="img/school_logo/schools_logo.png" alt="marquee">
+            <img class="marquee-img" height="120px" src="img/school_logo/schools_logo.png" alt="marquee">
+        </div>
+        <div class="marquee m2">
+            <img class="marquee-img" height="120px" src="img/school_logo/schools_logo.png" alt="marquee">
+            <img class="marquee-img" height="120px" src="img/school_logo/schools_logo.png" alt="marquee">
+            <img class="marquee-img" height="120px" src="img/school_logo/schools_logo.png" alt="marquee">
+        </div>
+    </div>
+
+    <div>
+        <p class="ch-title">碩士班甄試招生資訊系統</p>
+        <p class="en-title">Master Degree Screening Examination Admissions Information System</p>
+        <div class="login-box">
+            <form action="" method="post" class="login-form">
+                <label class="login-label" for="username">身分證字號：</label>
+                <input class="login-input" type="text" name="ID_number" id="username" required>
+                <label class="login-label" for="password">密碼：</label>
+                <input class="login-input" type="password" name="password" id="password" required>
+                <input type="hidden" name="action" value="log_in">
+                <input class="login-btn" type="submit" value="登入">
+            </form>
+
+            <div class="option">
+                <a id="r-btn" href="#">註冊</a>
+                <a href="#">忘記密碼</a>
+            </div>
+            <div class="separator">
+                <div class="or-line"></div>
+                <div class="text">or</div>
+                <div class="or-line"></div>            
+            </div>
+            
+            <div class="social">
+                <a href="#" class="login-btn"><img src="img/google.png" width="24px" height="24px" alt="google_logo">continue with Google　</a>
+                <a href="#" class="login-btn"><img src="img/FB.png" width="24px" height="24px" alt="FB_logo">continue with Facebook</a>
+            </div>
+        </div>
+    </div>
+    <div id="register-block" class="register-block">
+        <div id="register-bg" class="register-bg"></div>
+        <div class="register-box">
+            <div class="register-content">
+                <p class="register-title">註冊</p>
+                <hr>
+                <form class="register-form" action="" method="post">
+                    <label class="register-label" for="register-ID-number">身分證字號：</label>
+                    <input class="register-input" type="text" name="ID_number" id="register-ID-number" required>
+                    <label class="register-label" for="register-username">姓名：</label>
+                    <input class="register-input" type="text" name="username" id="register-username" required>
+                    <label class="register-label" for="register-password">密碼：</label>
+                    <input class="register-input" type="password" name="password" id="register-password" required>
+                    <label class="register-label" for="register-email">信箱：</label>
+                    <input class="register-input" type="text" name="email" id="register-email" required>
+                    <label class="register-label" for="register-phone">手機：</label>
+                    <input class="register-input" type="number" name="phone" id="register-phone" required>
+                    <input type="hidden" name="action" value="register">
+                    <input class="register-btn" type="submit" value="註冊">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

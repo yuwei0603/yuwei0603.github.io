@@ -1,0 +1,25 @@
+<script>
+    $("#logout_btn").click(function() {
+        if (confirm("確定要登出？")) {
+            log_out();
+        }      
+    });
+    if (currentURL.indexOf("/schools/") > -1) {
+        $("#index-link").attr("href", "../index.html");
+        $("#profile-link").attr("href", "../profile.html");
+    }
+</script>
+
+
+<p class="title">碩士班甄試招生資訊系統</p>
+<div class="menu">
+    <div class="h-top">
+        <a href="#"><span id="current_user">--</span><span> 同學</span></a>
+        <a id="logout_btn" href="#">(登出)</a>
+    </div>
+    <div class="h-bottom">    
+        <a id="index-link" href="./index.html"><div class="option">選擇學校</div></a>
+        <div class="v-bar"></div>
+        <a id="profile-link" href="./profile.html"><div class="option">個人檔案</div></a>
+    </div>
+</div>
