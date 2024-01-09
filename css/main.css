@@ -4,12 +4,7 @@
 
 
 /* 白底 */
-.container {
-    width: 100%;
-    margin: 0rem auto;
-    background-color: #fff;
-    border-radius: 1.5rem;
-}
+
 
 /* 主要 */
 .main {
@@ -18,33 +13,7 @@
 }
 
 /* -----school----- */
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.5rem;
-}
-.search-bar p {
-    width: 50%;
-    font-size: 2rem;
-    margin: 1rem 0;
-    font-weight: 500;
-}
-.stype-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-}
-.stype-option{
-    padding: 0.5rem 1.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-.stype-option:hover {
-    background-color: #BFDABD;
-}
+
 .search {
     border-bottom: 1px solid #688C7C;
     display: flex;

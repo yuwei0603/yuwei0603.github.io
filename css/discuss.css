@@ -1,0 +1,84 @@
+:root {
+    --content-width: 75rem;
+}
+  
+.main {
+    width: 100%;
+    padding: 4rem 3rem;
+}
+.main > * {
+    width: var(--content-width);
+    margin: auto;
+}
+
+.filter-post {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.filter-post img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+.filter-post select {
+    width: 12rem;
+    padding: 0.55rem;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-right: 2rem;
+}
+.posts {
+    padding: 0;
+}
+.post {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.write {
+    width: 6rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+    right: 13rem;
+    bottom: 10rem;
+    box-shadow: 0.025rem 0.025rem 0.1rem black;
+    background-color: #BFDABD;
+    border-radius: 100%;
+}
+.write img {
+    max-width: 100%;
+}
+/* RWD rem*/
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 10px;
+    }
+    .main {
+        padding: 4rem 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root {
+        --content-width: 46rem;
+    }
+    .main {
+        padding: 4rem 0.5rem;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    :root {
+        --content-width: 30rem;
+    }
+
+}

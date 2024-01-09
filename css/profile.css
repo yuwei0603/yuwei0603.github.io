@@ -6,7 +6,11 @@
     width: 100%;
     padding: 4rem 3rem;
 }
-.container {
+.main > * {
+    width: var(--content-width);
+    margin: auto;
+}
+.acontainer {
     width: var(--content-width);
     margin: 0 auto 3.5rem auto;
     display: flex;
@@ -75,7 +79,7 @@
     border-collapse: collapse;
     display: flex;
     flex-wrap: wrap;
-    background-color: #e6ddde;
+    background-color: #fff;
     box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25), 0.125rem -0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15);
     padding-right: 3rem;
     margin-right: -3rem;
@@ -107,8 +111,8 @@
 .field {
     width: 30%;
     padding: 1rem 0.5rem;
-    background-color: #3F403F;
-    color: white;
+    background-color: #BFDABD;
+    color: #265022;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -116,7 +120,7 @@
 .value {
     padding: 0.5rem 0.5rem;
     width: 70%;
-    background-color: #E6E8E6;
+    background-color: #fff;
 }
 .input-edit {
     background-color: #fff;
@@ -140,12 +144,8 @@
     cursor: pointer;
 }
 /* area 2--------------------------------------------------------- */
-.area2 {
-    background: #688C7C;
-}
-.area2 .area-title {
-    color: #FFF;
-}
+
+
 .regi-status {
     width: 100%;
     padding: 0 0.5rem;
@@ -157,9 +157,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
-    background-color: #fff;
-    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25), 0.125rem -0.125rem 0.25rem 0rem rgba(0, 0, 0, 0.15);
+    padding: 0.8rem;
+    background-color: #BFDABD;
+    border-radius: 0.5rem;
 }
 .regi-list p {
     margin: 0;
@@ -208,7 +208,7 @@
         padding-right: 0rem;
         margin-right: 0rem;
     }
-    .area1 .container {
+    .area1 .acontainer {
         flex-wrap: wrap-reverse;
     }
     .table-row  {

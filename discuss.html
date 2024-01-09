@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人檔案</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/discuss.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/discuss.css">
+ 
+</head>
+<body>
+
+    <div id="container" class="container">
+        <div class="header"></div>
+        <div class="main">
+
+            <div class="filter-post">
+                <img src="./img/filter.png" alt="filter">
+                <div class="filter-school">
+                    <label for="f-school">選取學校：</label>
+    
+                    <select id="f-school" name="f-school">
+                        <option value="NTUT">NTUT</option>
+                        <option value="NTUT">NTUT</option>
+                        <option value="NTUT">NTUT</option>
+                        <option value="NTUT">NTUT</option>
+                    </select>
+                </div>
+                <div class="filter-cat">
+                    <label for="f-cat">選取分類：</label>
+    
+                    <select id="f-cat" name="f-cat">
+                        <option value="系統BUG">系統BUG</option>
+                        <option value="正備取詢問">正備取詢問</option>
+                        <option value="尋找檔案">尋找檔案</option>
+                        <option value="請教問題">請教問題</option>
+                    </select>
+                </div>
+                <div class="filter-order">
+                    <label for="f-order">排序依據：</label>
+    
+                    <select id="f-order" name="f-order">
+                        <option value="時間">時間</option>
+                        <option value="熱門">熱門</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div id="posts-container" class="posts-container">
+                <ul class="posts" >
+                    <li class="post">
+                        <div>
+                            <p class="cat">[正備取詢問]</p>
+                            <p class="article">各位哥哥姊姊行行好，拜託你們寫放棄書><</p>
+                        </div>
+                    </li>
+                    <hr>
+                    <li class="post">
+                        <div>
+                            <p class="cat">[正備取詢問]</p>
+                            <p class="article">各位哥哥姊姊行行好，拜託你們寫放棄書><</p>
+                        </div>
+                    </li>
+                    <hr>
+                    <li class="post">
+                        <div>
+                            <p class="cat">[正備取詢問]</p>
+                            <p class="article">各位哥哥姊姊行行好，拜託你們寫放棄書><</p>
+                        </div>
+                    </li>
+                    <hr>
+                    <li class="post">
+                        <div>
+                            <p class="cat">[正備取詢問]</p>
+                            <p class="article">各位哥哥姊姊行行好，拜託你們寫放棄書><</p>
+                        </div>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+        <div class="write">
+            <img src="/img/edit.png" alt="write">
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
