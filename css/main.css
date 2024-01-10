@@ -1,5 +1,5 @@
 :root {
-    --content-width:75rem;
+    --content-width:68rem;
 }
 
 
@@ -11,7 +11,10 @@
     width: 100%;
     padding: 2rem;
 }
-
+.filter-bar {
+    margin: 0 -1.5rem;
+    padding: 2.5rem 3rem;
+}
 /* -----school----- */
 
 .search {
@@ -208,6 +211,10 @@ img.bell {
     html {
         font-size: 10px;
     }
+    .col {
+        margin: 0 1rem 3rem 1rem;
+        width: calc(calc(100%/2) - 2rem);
+    }
 
 }
 @media screen and (max-width: 768px) {
@@ -215,8 +222,7 @@ img.bell {
         --content-width: 48rem;
     }
     .col {
-        margin: 0 1rem 3rem 1rem;
-        width: calc(calc(100%/2) - 2rem);
+        width: calc(calc(100%/1) - 2rem);
     }
 }
 @media screen and (max-width: 480px) {

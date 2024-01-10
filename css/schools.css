@@ -1,9 +1,9 @@
 :root {
-    --content-width: 75rem;
+    --content-width: 68rem;
 }
 .main {
     width: 100%;
-    padding: 4rem 3rem;
+    padding: 3rem 3rem;
 }
 .main > * {
     width: var(--content-width);
@@ -184,7 +184,7 @@
 }
 @media screen and (max-width: 768px) {
     :root {
-        --content-width: 46rem;
+        --content-width: 39rem;
     }
     .main {
         padding: 4rem 0.5rem;
@@ -221,7 +221,5 @@
     .value, .field {
         width: 100%;
     }
-    .field {
-        background-color: #475841;
-    }
+
 }

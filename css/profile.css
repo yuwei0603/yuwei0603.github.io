@@ -1,5 +1,5 @@
 :root {
-    --content-width: 75rem;
+    --content-width: 68rem;
 }
   
 .main {
@@ -195,7 +195,7 @@
 }
 @media screen and (max-width: 768px) {
     :root {
-        --content-width: 46rem;
+        --content-width: 39rem;
     }
     .main {
         padding: 4rem 0.5rem;
@@ -216,6 +216,9 @@
     .text-form {
         padding-right: 0rem;
         margin-right: 0rem;
+    }
+    .area1 {
+        margin-top: 3rem;
     }
     .area1 .acontainer {
         flex-wrap: wrap-reverse;
@@ -239,8 +242,5 @@
     }
     .value, .field {
         width: 100%;
-    }
-    .field {
-        background-color: #475841;
     }
 }
