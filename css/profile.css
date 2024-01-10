@@ -106,7 +106,7 @@
     outline: none;
     box-shadow: none;
     transition: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .table-cell > *:disabled {
     color: black;
@@ -126,7 +126,7 @@
     background-color: #fff;
 }
 .input-edit {
-    background-color: #fff;
+    background-color: #e8e8e8;
 }
 .form-btn {
     margin: auto;
