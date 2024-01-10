@@ -18,11 +18,11 @@
         <div class="main">
             <div class="filter-bar">
                 <div class="filter-menu">
-                    <div class="filter-option">全部</div>
-                    <div class="filter-option">國立大學</div>
-                    <div class="filter-option">私立大學</div>
-                    <div class="filter-option">普通大學</div>
-                    <div class="filter-option">科技大學</div>
+                    <div id="reset" class="filter-option filter-select" onclick="searchSchools()">全部</div>
+                    <div class="filter-option s" data-value="公立" onclick="applyFilter('s', '公立')">國立大學</div>
+                    <div class="filter-option s" data-value="私立" onclick="applyFilter('s', '私立')">私立大學</div>
+                    <div class="filter-option t" data-value="普大" onclick="applyFilter('t', '普大')">普通大學</div>
+                    <div class="filter-option t" data-value="科大" onclick="applyFilter('t', '科大')">科技大學</div>
                 </div>
                 <div class="search">
                     <img src="img/search.png" alt="搜尋">

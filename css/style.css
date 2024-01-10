@@ -147,9 +147,13 @@ body {
     border-radius: 0.5rem;
     cursor: pointer;
     font-size: 1.5rem;
+    margin-right: 2rem;
 }
 .filter-option:hover {
     background-color: #BFDABD;
+}
+.filter-select {
+    background-color: #95b593;
 }
 @media screen and (max-width: 480px) {
     :root {

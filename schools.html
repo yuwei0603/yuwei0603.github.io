@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人檔案</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/schools.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/schools.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header"></div>
+        <div id="school-content">
+            <!-- 這裡將顯示由PHP生成的內容 -->
+        </div>
+        <div class="footer"></div>
+    </div>
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const schoolName = urlParams.get('school');
+        
+        if (schoolName) {
+            const xhr = new XMLHttpRequest();
+            
+            xhr.withCredentials = true;
+            xhr.crossDomain = true;
+        
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById('school-content').innerHTML = xhr.responseText;
+                }
+                $(document).ready(function() {
+
+                    $(".value > *").attr("disabled", true);
+                
+                    $("#edit-form").click(function (e) { 
+                        e.preventDefault();
+                        start_edit();
+                    });
+                
+                    $("#submit").click(function (e) { 
+                        e.preventDefault();
+                        let formDataArray = $("#added-data").serializeArray();
+                        alt_added_data();
+                    });
+                
+                    $("#cancel").click(function (e) { 
+                        e.preventDefault();
+                        finish_edit();
+                    });
+
+                    $(".filter-option").click(function () {
+                        var targetClass = $(this).data("target");
+                        $(".filter-select").removeClass('filter-select');
+                        $(this).addClass("filter-select");
+                        $(".area1,.area2").hide();
+                        $(targetClass).show();
+                    });
+                
+                });
+                
+            };
+        
+            xhr.open('GET', `https://admissionsportal.000webhostapp.com/backend/app/school_page.php?school=${schoolName}`, true);
+            xhr.send();
+        }
+        
+    </script>
+    
+</body>
+</html>

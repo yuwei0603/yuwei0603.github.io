@@ -36,6 +36,7 @@
 .post {
     list-style: none;
     font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .write {
@@ -44,8 +45,8 @@
     cursor: pointer;
     position: fixed;
     z-index: 999;
-    right: 13rem;
-    bottom: 10rem;
+    right: 7rem;
+    bottom: 7rem;
     box-shadow: 0.025rem 0.025rem 0.1rem black;
     background-color: #BFDABD;
     border-radius: 100%;
@@ -53,6 +54,132 @@
 .write img {
     max-width: 100%;
 }
+
+.front-block {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.front-block form {
+    width: 100%;
+    height: 100%;
+}
+.dark-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background-color: black;
+    opacity: 0.5;
+}
+.write-box {
+    position: relative;
+    width: 45rem;
+    height: 40rem;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 0.625rem;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.write-box input[type="text"] {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+
+.front-block label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.front-block input,
+.front-block select,
+.front-block textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.front-block textarea  {
+    resize: none;
+    height: 13rem;
+}
+
+.front-block button {
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+.front-block button:hover {
+    background-color: #45a049;
+}
+
+
+.post-box {
+    position: relative;
+    width: 45rem;
+    height: 40rem;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 0.625rem;
+    padding: 4rem;
+    overflow-x: hidden;
+}
+.post-box h2 {
+    margin: 0;
+}
+.p-info {
+    color: #3D7798;
+    font-size: 0.8rem;
+}
+
+.p-article {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.p-comments {
+    list-style: none;
+    padding: 0;
+}
+.input {
+    align-self: flex-end;
+}
+.input input {
+    width: 80%;
+    padding: 10px;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+.input button {
+    width: 19%;
+}
+
 /* RWD rem*/
 @media screen and (max-width: 1280px) {
     html {

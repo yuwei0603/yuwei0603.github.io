@@ -17,23 +17,21 @@
         <div class="header"></div>
         <div class="main">
 
-            <div class="filter-post">
+            <div id="filter-post" class="filter-post">
                 <img src="./img/filter.png" alt="filter">
                 <div class="filter-school">
                     <label for="f-school">選取學校：</label>
     
                     <select id="f-school" name="f-school">
-                        <option value="NTUT">NTUT</option>
-                        <option value="NTUT">NTUT</option>
-                        <option value="NTUT">NTUT</option>
-                        <option value="NTUT">NTUT</option>
+                        <option value="ALL">ALL--全部</option>
                     </select>
                 </div>
                 <div class="filter-cat">
                     <label for="f-cat">選取分類：</label>
     
                     <select id="f-cat" name="f-cat">
-                        <option value="系統BUG">系統BUG</option>
+                        <option value="ALL">ALL--全部</option>
+                        <option value="面試請益">面試請益</option>
                         <option value="正備取詢問">正備取詢問</option>
                         <option value="尋找檔案">尋找檔案</option>
                         <option value="請教問題">請教問題</option>
@@ -50,42 +48,61 @@
             </div>
             <hr>
             <div id="posts-container" class="posts-container">
-                <ul class="posts" >
-                    <li class="post">
-                        <div>
-                            <p class="cat">[正備取詢問]</p>
-                            <p class="article">各位哥哥姊姊行行好，拜託你們寫放棄書><</p>
-                        </div>
-                    </li>
-                    <hr>
-                    <li class="post">
-                        <div>
-                            <p class="cat">[正備取詢問]</p>
-                            <p class="article">各位哥哥姊姊行行好，拜託你們寫放棄書><</p>
-                        </div>
-                    </li>
-                    <hr>
-                    <li class="post">
-                        <div>
-                            <p class="cat">[正備取詢問]</p>
-                            <p class="article">各位哥哥姊姊行行好，拜託你們寫放棄書><</p>
-                        </div>
-                    </li>
-                    <hr>
-                    <li class="post">
-                        <div>
-                            <p class="cat">[正備取詢問]</p>
-                            <p class="article">各位哥哥姊姊行行好，拜託你們寫放棄書><</p>
-                        </div>
-                    </li>
-                    <hr>
+                <ul id="posts" class="posts" >
+
                 </ul>
             </div>
         </div>
-        <div class="write">
+        <div id="write" class="write">
             <img src="/img/edit.png" alt="write">
         </div>
         <div class="footer"></div>
     </div>
+
+    <div id="w-block" class="front-block">
+        <div class="dark-bg"></div>
+        <div class="write-box">
+            <form id="w-form" action="" method="post">
+                <label for="w-title"></label>
+                <input type="text" name="w-title" id="w-title" placeholder="標題">
+                <label for="w-school">選取學校：</label>
+                <select name="w-school" id="w-school">
+                </select>
+                <label for="w-cat">選取類別：</label>
+                <select name="w-cat" id="w-cat">
+                    <option value="面試請益">面試請益</option>
+                    <option value="正備取詢問">正備取詢問</option>
+                    <option value="尋找檔案">尋找檔案</option>
+                    <option value="請教問題">請教問題</option>
+                </select>
+                <label for="w-content"></label>
+                <textarea name="w-content" id="w-content"></textarea>
+                <input type="hidden" name="action" value="add_post">
+                <button type="submit">發布</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="p-block" class="front-block">
+        <div class="dark-bg"></div>
+        <div class="post-box">
+            <div id="inf" data-post-id=""></div>
+            <h2>[<span id="p-cat" class="p-cat">aaa</span>]<span id="p-title" class="p-title">bbb</span></h3>
+            <p class="p-info"><span id="p-school" class="p-school"></span> ‧ <span id="p-name" class="p-name"></span> ‧ <span id="p-time" class="p-time"></span></p>
+            <article id="p-article" class="p-article"></article>
+            <hr style="border-top:1px solid #000000;height:1px;"/>
+            <ul id="p-comments" class="p-comments">
+
+            </ul>
+            <div class="input">
+                <input type="text" name="comment" id="comment">
+                <button id="comment-btn">留言</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
 </body>
 </html>
