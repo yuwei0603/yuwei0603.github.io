@@ -156,7 +156,8 @@ body {
     background-color: #95b593;
 }
 
-@media screen and (max-width: 762px) {
+
+@media screen and (max-width: 768px) {
     :root {
         --content-width: 30rem;
     }
